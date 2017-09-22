@@ -1,6 +1,0 @@
-//Outputting JavaScript formulas.
-
-/*
-innerHTML
-
-*/
