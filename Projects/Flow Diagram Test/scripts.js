@@ -1,10 +1,12 @@
-function treeOne() {
+function branchOneAlgorithm() {
 
 	if (document.getElementById("trueOne").checked == true) {
-		window.alert("Correct");
+        document.getElementById("branchOne").style.display = "none";
+        document.getElementById("treeTwoOne").style.display = "block";
 	} 
 	
 	else {
-				window.alert("Incorrect");
+        document.getElementById("branchOne").style.display = "none";
+        document.getElementById("treeTwoTwo").style.display = "block";
 				}
 }
