@@ -17,13 +17,16 @@
  <input type="submit" onclick="addition();" />
 </form>
 
+<p id="demo"></p>
+
+
 <script>
 function addition() {
 	// parsing the variable
 	var inputVar = document.getElementById("userInput").value;
 
 	if (inputVar == 15) {
-		alert("nice work u hella lit");
+		document.getElementById("demo").innerHTML = "hell yeah";
 	} else {
 		alert("riperoo wrong answer");
 	}
