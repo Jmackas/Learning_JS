@@ -1,3 +1,12 @@
+body {
+    font-size: 300%;
+    font-family: calibri;
+}
+
+input {
+    font-size: 50%;
+}
+
 #treeTwoTwo, #treeTwoOne {
     display: none;
 }

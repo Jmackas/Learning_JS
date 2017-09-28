@@ -5,7 +5,7 @@ function branchOneAlgorithm() {
         document.getElementById("treeTwoOne").style.display = "block";
 	} 
 	
-	else {
+	else if (document.getElementById("falseOne").checked == true) {
         document.getElementById("branchOne").style.display = "none";
         document.getElementById("treeTwoTwo").style.display = "block";
 				}
