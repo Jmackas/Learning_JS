@@ -1,4 +1,5 @@
-function treeOne(); 
+function treeOne() {
+
 	if (document.getElementById("trueOne").checked == true) {
 		window.alert("Correct");
 	} 
