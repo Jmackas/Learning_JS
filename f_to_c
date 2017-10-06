@@ -1,0 +1,18 @@
+<form id="form" onsubmit="return false;">
+    <input type="text" id="userInput" />
+    <input type="submit" onclick="othername();" />
+</form>
+
+<p id="demo"></p>
+
+<script>
+function othername() {
+	// the input variable is 'inputVar'
+    var inputVar = document.getElementById("userInput").value;
+    
+	fehrenheit = (inputVar - 32) * (5/9);
+	
+	
+	document.getElementById("demo").innerHTML = fehrenheit;
+}
+</script>
