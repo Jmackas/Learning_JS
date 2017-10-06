@@ -1,11 +1,13 @@
-<h1 id="titleSwap"></h1>
+<h1>Celsius to Fehrehneit</h1>
 
 <form id="form" onsubmit="return false;">
  <input type="text" id="userInput" />
  <input type="submit" onclick="othername();" />
 </form>
 
-<input id="checkBox" type="checkbox">
+<br>
+
+<span>Enable Fehrehneit to Celsius</span><input id="checkBox" type="checkbox">
 
 
 <p id="outputVar"></p>
@@ -13,14 +15,13 @@
 <script>
  function othername() {
   if (document.getElementById("checkBox").checked == true) {
-   // the input variable is 'inputVar'
+   var inputVar = document.getElementById("userInput").value;
  
    outputVar = (inputVar - 32) * (5 / 9);
-	  
   } else {
    var inputVar = document.getElementById("userInput").value;
  
-   outputVar = inputVar + 2;
+   outputVar = 9 / 5 * inputVar + 32;
   }
  
   document.getElementById("outputVar").innerHTML = outputVar;
