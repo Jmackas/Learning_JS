@@ -1,18 +1,28 @@
+<h1 id="titleSwap"></h1>
+
 <form id="form" onsubmit="return false;">
-    <input type="text" id="userInput" />
-    <input type="submit" onclick="othername();" />
+ <input type="text" id="userInput" />
+ <input type="submit" onclick="othername();" />
 </form>
 
-<p id="demo"></p>
+<input id="checkBox" type="checkbox">
+
+
+<p id="outputVar"></p>
 
 <script>
-function othername() {
-	// the input variable is 'inputVar'
-    var inputVar = document.getElementById("userInput").value;
-    
-	fehrenheit = (inputVar - 32) * (5/9);
-	
-	
-	document.getElementById("demo").innerHTML = fehrenheit;
-}
+ function othername() {
+  if (document.getElementById("checkBox").checked == true) {
+   // the input variable is 'inputVar'
+ 
+   outputVar = (inputVar - 32) * (5 / 9);
+	  
+  } else {
+   var inputVar = document.getElementById("userInput").value;
+ 
+   outputVar = inputVar + 2;
+  }
+ 
+  document.getElementById("outputVar").innerHTML = outputVar;
+ }
 </script>
