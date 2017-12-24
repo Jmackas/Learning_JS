@@ -1,0 +1,49 @@
+<span id="numOne">_</span> +
+<span id="numTwo">_</span> =
+<input type="text" id="userInput" />
+
+<br>
+<br>
+
+<button onclick="processAnswer()">Try it</button>
+
+
+
+<script>
+    // Run formula on program commencement
+    formula();
+
+    // Variable declarations
+    var numOneVar;
+    var numTwoVar;
+    var finalAnswer;
+
+    // Automatic formula function
+    function formula() {
+        // numOne number generation
+        numOneVar = Math.floor(Math.random() * 10 + 1);
+        document.getElementById("numOne").innerHTML = numOneVar;
+
+        // numTwo number generation
+        numTwoVar = Math.floor(Math.random() * 10 + 1);
+        document.getElementById("numTwo").innerHTML = numTwoVar;
+
+        finalAnswer = numOneVar + numTwoVar;
+    }
+
+    // Answer determination on select
+    function processAnswer() {
+        // Retrieve user input to varable
+        var inputVar = document.getElementById("userInput").value;
+
+        if (inputVar == finalAnswer) {
+            alert("Nice!");
+        }
+
+        else {
+            alert("Wrong!");
+        }
+
+    }
+
+</script>
