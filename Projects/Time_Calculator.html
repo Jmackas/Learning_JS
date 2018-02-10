@@ -1,0 +1,82 @@
+<!-- 
+Notes:
+
+
+Issues:
+- Currently displays an 'undefined' text when a variable hasn't been defined yet. Would be good to hide the undefined text until the variable becomes defined by the user.
+- Not sure how to target a drop down menu item when selected.
+
+ -->
+
+
+<h1>Total Work Time</h1>
+
+<span>Start Time: </span>
+<input type="text" id="beginning_time" />
+
+
+<select>
+    <option value="06:30AM">06:30AM</option>
+    <option value="07:00AM">07:00AM</option>
+    <option value="07:30AM"></option>
+    <option value="08:00AM"></option>
+    <option value="08:30AM"></option>
+    <option value="09:00AM"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+    <option value="0000000"></option>
+</select>
+
+
+<br>
+<br>
+
+<span>Finish Time: </span>
+<input type="text" id="end_time" />
+
+<br>
+<br>
+
+<button onclick="time_calculator()">Find Hours Worked</button>
+
+<br>
+<br>
+<hr>
+<br>
+
+
+<strong>
+    <span>Total Hours Worked: </span>
+</strong>
+<input type="text" id="total_hours" />
+
+
+<script>
+    // Declaration of global variables
+    var beginningTime, endTime, finalTime;
+
+    // Function for the beginning time variable
+    function time_calculator() {
+        beginningTime = document.getElementById("beginning_time").value;
+        endTime = document.getElementById("end_time").value;
+
+        finalTime = endTime - beginningTime;
+
+        document.getElementById("total_hours").value = finalTime;
+    }
+
+</script>
